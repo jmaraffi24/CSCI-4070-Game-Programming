@@ -1,0 +1,38 @@
+<!--
+P3 Path Planning
+index.html
+Jacob Maraffi
+This file contains all the HTML for P3.
+-->
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" href="./css/style.css" />
+<div id="container">
+    <!-- Display canvas which holds the grid -->
+    <canvas class="info" id="canvas1" width="800" height="800" style="border:10px solid black; display: inline-block"> </canvas><br>
+    <!-- Stats canvas which displays attributes of the algorithm and map -->
+    <canvas id="canvas2" width="300" height="200" style="border:5px solid black; display: inline-block"> </canvas>
+    <!-- Buttons div which contains all buttons -->
+    <div class="buttons">
+        <h3 class="header">Animation Controls:</h3>
+        <button onclick="astar()">A* </button>
+        <button onclick="on()">Start-to-Finish</button>
+        <button onclick="off()">Step Through</button><br>
+        <button onclick="up()">Speed Up</button>
+        <button onclick="down()">Speed Down</button><br>
+        <button onclick="start()">Start</button>
+        <button onclick="step1()">Step</button>
+        <h3 class="header">Map Selection:</h3>
+        <button onclick="m1()">Map 1</button>
+        <button onclick="m2()">Map 2</button>
+        <button onclick="m3()">Map 3</button>
+        <button onclick="randommap()">Randomize Map</button>
+    </div>
+    <br>
+    <!-- Steps div which contains instructions on how to use the program -->
+    <canvas id="canvas3" width="300" height="200" style="border:5px solid black; display: inline-block"> </canvas>
+	<script src= "./js/pathplanning.js"></script>
+</div>
+</body>
+</html>
